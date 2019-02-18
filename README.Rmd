@@ -43,7 +43,7 @@ head(simulations)
 
 ## Install
 ```{r, eval=FALSE}
-devtools::install_github("Voltemand\rgreta")
+devtools::install_github("Voltemand/rgreta")
 ```
 
 ## TODO
@@ -56,3 +56,4 @@ is:
 * Seed passing
 * A way to pass simulated data back to models
 * Support for tensorflow probability distibutions samplers
+* Returning of simulated parameters

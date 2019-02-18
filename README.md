@@ -42,13 +42,13 @@ head(simulations)
 
     ## greta array (operation)
     ## 
-    ##            [,1]
-    ## [1,] -193763.22
-    ## [2,]  -55621.24
-    ## [3,] -177213.77
-    ## [4,]  180697.57
-    ## [5,]  -19183.71
-    ## [6,]   63658.44
+    ##           [,1]
+    ## [1,] -30.49928
+    ## [2,] -40.97668
+    ## [3,] -55.02376
+    ## [4,] -42.91614
+    ## [5,] -54.98568
+    ## [6,] -31.52700
 
 Or we can simulate setting parameters to certain values
 
@@ -67,17 +67,17 @@ head(simulations)
     ## greta array (operation)
     ## 
     ##          [,1]
-    ## [1,] 52.95084
-    ## [2,] 65.40251
-    ## [3,] 70.58232
-    ## [4,] 62.36550
-    ## [5,] 80.54827
-    ## [6,] 54.35152
+    ## [1,] 51.87987
+    ## [2,] 64.78252
+    ## [3,] 70.35454
+    ## [4,] 66.05834
+    ## [5,] 78.77893
+    ## [6,] 56.91385
 
 ## Install
 
 ``` r
-devtools::install_github("Voltemand\rgreta")
+devtools::install_github("Voltemand/rgreta")
 ```
 
 ## TODO
@@ -91,3 +91,4 @@ feature/idea list is:
   - Seed passing
   - A way to pass simulated data back to models
   - Support for tensorflow probability distibutions samplers
+  - Returning of simulated parameters
