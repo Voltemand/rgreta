@@ -8,7 +8,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # rgreta
 
-rgreta provides support for simulating models defined in the greta package
+**rgreta** provides support for simple simulation of models defined in the 
+**greta** modelling language/R package
 
 ## Usage
 
@@ -34,9 +35,10 @@ simulations <- simulate(m)
 head(simulations)
 ```
 
-Or we can simulate setting parmeters to certain values
+Or we can simulate setting parameters to certain values
 ```{r}
-m$dag$node_list
+simulations <- simulate(m, list(int = 1, coef = 1, sd = 1))
+head(simulations)
 ```
 
 ## Install
@@ -44,3 +46,13 @@ m$dag$node_list
 devtools::install_github("Voltemand\rgreta")
 ```
 
+## TODO
+
+**rgreta** is very much still a work in progress. The current feature/idea list 
+is:
+
+* Support for more distibutions and operations - currently rgreta only supports 
+  the normal and cauchy distributions and addition and multiplication operations
+* Seed passing
+* A way to pass simulated data back to models
+* Support for tensorflow probability distibutions samplers
