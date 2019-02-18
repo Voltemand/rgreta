@@ -1,0 +1,15 @@
+Package: rgreta
+Title: Easily simulate greta models
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Jeffrey",
+           family = "Pullin",
+           role = c("aut", "cre"),
+           email = "jeffrey.pullin@gmail.com")
+Description: Provides model simulation for the greta package
+License: What license it uses
+Encoding: UTF-8
+LazyData: true
+Suggests: 
+    testthat
+RoxygenNote: 6.1.0
